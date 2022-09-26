@@ -87,9 +87,9 @@ function ShipSpaceBombCollision() {
       ctx.fillText(
         "You have been destroyed, Earth has been invaded",
         50,
-        canvas.height / 2
+        canvas.height / 2 - 200
       );
-      ctx.fillText("Your Score was : " + score, 200, canvas.height / 2 + 50);
+      ctx.fillText("Your Score was : " + score, 200, canvas.height / 2 - 150);
       restartBtn.classList.add("btnActive");
       hsResetBtn.classList.add("btnActive");
       animate = false;

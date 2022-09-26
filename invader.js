@@ -67,12 +67,8 @@ function gameOver() {
       100,
       canvas.height / 2
     );
-    ctx.fillText(
-      "Press S to Shoot, Left & Right Arrows to Move Ship ",
-      40,
-      canvas.height / 2 + 250
-    );
-    highestScores()
+
+    highestScores();
     restartBtn.classList.add("btnActive");
     hsResetBtn.classList.add("btnActive");
     animate = false;
@@ -85,11 +81,10 @@ function gameOver() {
         "You have been destroyed, Earth has been invaded",
         50,
         canvas.height / 2
-      );   
+      );
       ctx.fillText("Your Score was: " + score, 200, canvas.height / 2 + 200);
-      ctx.fillText("Press S to Shoot, Left & Right Arrows to Move Ship ",  40, canvas.height / 2 + 250);
-       restartBtn.classList.add("btnActive");
-        hsResetBtn.classList.add("btnActive");
+      restartBtn.classList.add("btnActive");
+      hsResetBtn.classList.add("btnActive");
       animate = false;
     }
   }

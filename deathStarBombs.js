@@ -90,11 +90,6 @@ function ShipSpaceBombCollision() {
         canvas.height / 2
       );
       ctx.fillText("Your Score was : " + score, 200, canvas.height / 2 + 50);
-      ctx.fillText(
-        "Press S to Shoot, Left & Right Arrows to Move Ship ",
-        40,
-        canvas.height / 2 + 250
-      );
       restartBtn.classList.add("btnActive");
       hsResetBtn.classList.add("btnActive");
       animate = false;

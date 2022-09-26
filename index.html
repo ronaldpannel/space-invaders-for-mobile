@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="explosionSound" src="explosion2.wav"></audio>
+    <audio id="laserSound" src="laser1.wav"></audio>
+
+    <button class="hsResetBtn" id="hsResetBtn">Reset Highest Score</button>
+    <button class="restartBtn" id="restartBtn">Restart Game</button>
+
+    <button class="rightBtn" id="rightBtn">R</button>
+    <button class="leftBtn" id="leftBtn">L</button>
+    <button class="fireBtn" id="fireBtn">F</button>
+
+    <canvas class="canvas1" id="canvas1"></canvas>
+
+    <script src="explosionParticle.js"></script>
+    <script src="asteroids.js"></script>
+    <script src="deathStarBombs.js"></script>
+    <script src="deathStar.js"></script>
+    <script src="laserParticle.js"></script>
+    <script src="spaceRocks.js"></script>
+    <script src="invader.js"></script>
+    <script src="spaceship.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

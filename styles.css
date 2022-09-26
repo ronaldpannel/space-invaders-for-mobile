@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+.canvas1 {
+  background-image: url("bg2.jpg");
+  background-size: cover;
+  background-repeat: none;
+  max-width: 100%;
+  max-height: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border: 2px solid white;
+  max-width: 100%;
+  max-height: 100%;
+  touch-action: none;
+}
+.restartBtn {
+  display: none;
+  width: 200px;
+  height: 40px;
+  z-index: 200;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  border: solid white 2px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.restartBtn:hover {
+  color: black;
+  background-color: white;
+  border: black solid 2px;
+}
+.hsResetBtn {
+  display: none;
+  width: 200px;
+  height: 40px;
+  z-index: 200;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  border: solid white 2px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.hsResetBtn:hover {
+  color: black;
+  background-color: white;
+  border: black solid 2px;
+}
+
+.btnActive {
+  display: block;
+}
+
+.rightBtn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  border: solid white 2px;
+  border-radius: 50%;
+  background-color:transparent;
+  color: white;
+  cursor: pointer;
+}
+.leftBtn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  z-index: 200;
+  position: absolute;
+  top: 60%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  border: solid white 2px;
+  border-radius: 50%;
+  background-color:transparent;
+  color: white;
+  cursor: pointer;
+}
+.fireBtn{
+  display: block;
+  width: 60px;
+  height: 60px;
+  z-index: 300;
+  position: absolute;
+  top: 60%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  border: solid white 2px;
+  border-radius: 50%;
+  background-color:transparent;
+  color: white;
+  cursor: pointer;
+}

@@ -45,6 +45,8 @@ function laserInvaderCollision(opacity) {
             )
           );
         }
+        explosionSound.pause();
+        explosionSound.currentTime = 0;
         explosionSound.play();
         score++;
         invaders.splice(i, 1);

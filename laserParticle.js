@@ -1,4 +1,3 @@
-
 class Laser {
   constructor() {
     this.x = ship.x;
@@ -38,13 +37,10 @@ function laserInvaderCollision(opacity) {
       distance = Math.sqrt(dx * dx + dy * dy);
       if (distance < lasers[j].r + invaders[i].r) {
         for (let i = 0; i < 10; i++) {
-          exParticles.push(
-            new ExParticle(
-              lasers[j].x,
-              lasers[j].y
-            )
-          );
+          exParticles.push(new ExParticle(lasers[j].x, lasers[j].y));
         }
+        explosionSound.pause();
+        explosionSound.currentTime = 0;
         explosionSound.play();
         score++;
         invaders.splice(i, 1);

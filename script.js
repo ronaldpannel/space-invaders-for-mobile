@@ -69,6 +69,8 @@ window.addEventListener("keydown", function (e) {
 window.addEventListener("keydown", function (e) {
   if (e.code === "KeyS") {
     lasers.unshift(new Laser());
+    laserSound.pause();
+    laserSound.currentTime = 0;
     laserSound.play();
   }
 });
